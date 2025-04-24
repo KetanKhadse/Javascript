@@ -59,13 +59,13 @@ lets talk about some Range of Primitive DataType:
         The range is practically unlimited and depends on available memory.
                           Type                                   typeof
 
-i)             Number                               number
-ii)            String                                   string
-iii)           Boolean                               boolean
-iv)           Bigint                                   bigint
-v)            Symbol                                symbol
+i)            Number                                   number
+ii)           String                                   string
+iii)          Boolean                                  boolean
+iv)           Bigint                                    bigint
+v)            Symbol                                    symbol
 vi)           Null                                      object
-vii)          Undefined                           undefined
+vii)          Undefined                                 undefined
 
 
 * Non-Premitive OR Referance OR Object datatype
