@@ -41,11 +41,9 @@ const Obja = {
 }
 
 //console.log(Obja.fullName.UserFullName.Name);
-const a = {
-    a:1,b:2
-}
+const a = {a:1,b:2}
 const b = {c:3,d:4}
-//const c = Object.assign({},a,b)
-const c = {...a,...b}
+const c = Object.assign({},a,b)
+//const c = {...a,...b}
 console.log(c);
 

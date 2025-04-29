@@ -65,5 +65,5 @@ val = null ?? 10 ?? 12;
 //Condition ? True : false
 //Ternary operator
 
-Score <= 200 ? console.log("The Score is less than 200"):("The score is higher than 200");
+Score <=200? console.log("The Score is less than 200"):("The score is higher than 200");
 
