@@ -33,7 +33,7 @@ const mynum = [1,2,3,4,5,6,7,8,9,10]
 //we use  reduce when we want to process and combine the value of js array into a single value 
 //has a accumulator and a current value variable
 const mytotal = mynum.reduce((acc,cur)=>{
-    console.log(cur);
+    //console.log(cur);
     //return acc+cur
 },0);
 //console.log(mytotal);
@@ -63,8 +63,9 @@ const ShoppingCart = [
 
 const CartTotal = ShoppingCart.reduce((acc,curr)=>
 {
-    console.log(curr.price)
+   // console.log(curr.price)
   //return acc +curr.price;
 
 },0)
 //console.log(CartTotal);
+
