@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-color{
+                  background-color: #212121;
+                  color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-color">
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Nesciunt sit aperiam ipsam veniam quas ut cupiditate praesentium nemo, 
+    odio sequi qui, repudiandae dicta repellat quasi delectus officia tempore quam excepturi!
+   </p>
+   <p id="secondPara"></p>
+   <ul class="DayList">
+    
+   </ul>
+</body>
+</html>
+<script>
+    document.getElementById("secondPara").innerHTML="<h1>This is second para </h1>";
+    let Listelement = document.querySelector('.DayList');  
+    Listelement.className='DayClass';
+    Listelement.id="Day";
+    let Arr = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    for (let i = 0; i<Arr.length; i++) { 
+        Listelement.appendChild(document.createElement("li")).innerText=`${Arr[i]}`
+      }    
+   document.querySelector("li:nth-child(1)").style.color="Orange"
+   document.querySelector("li:nth-child(2)").style.color="Blue"
+   document.querySelector("li:nth-child(3)").style.color="LightBlue"
+   document.querySelector("li:nth-child(4)").style.color="grey"
+   document.querySelector("li:nth-child(5)").style.color="Lightgrey"
+   document.querySelector("li:nth-child(6)").style.color="pink"
+   document.querySelector("li:nth-child(7)").style.color="#ffff"
+   //Replace
+//   let newLisrReplacement = Listelement.appendChild(document.createElement('li'));  
+//   Listelement.replaceWith(newLisrReplacement.innerText='hello')
+  //edit
+  let firstEdit = document.querySelector("li:first-child")
+  firstEdit.outerHTML='<li>Monday</li>'
+  //remove
+  let FirstRemove = document.querySelector("li:first-child")
+  FirstRemove.remove()
+  
+</script>
