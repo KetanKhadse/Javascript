@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #grey{
+            background-color: gray;
+           
+        }
+        #yellow{
+            background-color: yellow;
+           
+        }
+        #blue{
+            background-color: blue;
+        }
+        #purple{
+            background-color: purple;
+            
+        }
+        .button{
+            font-size: 50px;
+            border: 1px solid black;
+            height: 100px;
+            width: 500px;
+            margin: 15px;
+            padding: 50px;
+            margin-top: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <span class="button" id="grey"></span>
+    <span class="button" id="yellow"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="purple"></span>
+</body>
+<script>
+    let buttons = document.querySelectorAll('.button');
+    let body = document.querySelector("body");
+    buttons.forEach((buttons)=>{
+     document.addEventListener('click',(e)=>{
+        body.style.backgroundColor = e.target.id;
+     });  
+    });  
+</script>
+</html>
