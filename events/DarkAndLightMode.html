@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+</head>
+<body>
+    <button id="Mode">Toggle Switch</button>
+    <script>
+        let mode = document.querySelector("#Mode");
+        let CurrMode = "Light";
+        mode.addEventListener("click",(e)=>{
+           if(CurrMode === "Light"){
+              CurrMode = "Dark"
+              document.querySelector("body").style.backgroundColor="#212121";
+              document.querySelector("body").style.color="#fff";
+           }else{
+            CurrMode ="Light"
+            document.querySelector("body").style.backgroundColor="#fff";
+            document.querySelector("body").style.color="#212121";
+           }
+            console.log(CurrMode);
+        })       
+    </script>
+</body>
+</html>
