@@ -18,7 +18,40 @@
         </ul>
     </div>
     <script>
-        
+        // document.getElementById('images').addEventListener('click',
+        //     (e)=>{
+        //       console.log("Clicked inside the ul");
+              
+        //     },
+        //     false);
+        // document.getElementById('owl').addEventListener('click',
+        //     (e)=>{
+        //       console.log("Clicked on the owl inside the ul");
+        //       e.stopPropagation();
+             
+        //     },
+        //     false);
+        // document.getElementById('google').addEventListener('click',
+        //     (e)=>{
+        //         console.log("Google Link Clicked");
+        //         e.preventDefault();
+        //         e.stopPropagation();
+        //     },
+        //     false)
+       document.getElementById('images').addEventListener('click',
+        (e)=>{
+            console.log(e.target.tagName);
+            e.preventDefault();
+            if (e.target.tagName === 'IMG') {
+                let Element = e.target.parentNode;
+                //first method
+                Element.remove();
+            }
+            
+            //Seceond Method
+            //Element.parentNode.removeChild(Element);
+        }
+       )
     </script>
 </body>
 </html>

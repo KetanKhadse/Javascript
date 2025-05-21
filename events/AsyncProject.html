@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Prectice</h1>
+    <button id="button">Stop</button>
+    <script>
+      let TimeResult =  setInterval(()=>
+        {
+            console.log("My name is ketan");       
+        }, 
+        2000);
+
+        document.querySelector("#button").addEventListener('click',(e)=>{
+            console.log("Interval Stopped");
+           clearInterval(TimeResult);         
+        }); 
+
+    </script>
+</body>
+</html>
