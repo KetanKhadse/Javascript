@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #212121; color:aliceblue ;">
+    <h1>Prototypes in javascript</h1>
+    <P>
+        Prototypes are the mechanism by which JavaScript objects inherit features from one another. 
+    </P>
+    <p>
+        Every object in JavaScript has a built-in property, which is called its prototype. 
+        The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. 
+        The chain ends when we reach a prototype that has null for its own prototype.
+    </p>
+    <p>
+        When you try to access a property of an object: if the property can't be found in the object itself, the prototype is searched for the property.
+        If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case undefined is returned.
+        So when we call myObject.toString(), 
+        the browser:looks for toString in myObject
+        can't find it there, so looks in the prototype object of myObject for toString
+f       inds it there, and calls it.
+
+    </p>
     <script src="Prototypes.js"></script>
 </body>
 </html>
