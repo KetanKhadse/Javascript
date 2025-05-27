@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <button>Click Me</button>
+    <p>
+    <p>
+        ⚙️ JavaScript Functionality
+        🏗️ Class Definition: React
+        A custom class named React is created. Despite the name, it's not the actual React framework.
+
+        This class:
+
+        Sets two properties:
+
+        framework: a string "react"
+
+        Server: a string URL "https://localhost3000"
+    </p>
+
+    <p>
+        Adds a click event listener to the button on the page.
+
+        🧠 Event Listener
+        document.querySelector("button") selects the button.
+
+        The click event is handled by the method handleclick, bound to the current class instance using .bind(this).
+
+        Why .bind(this)?
+        It ensures this inside handleclick() refers to the class instance (App), not the button element.
+
+        📦 handleclick() Method
+        When the button is clicked:
+
+        Logs "button Clicked" to the console.
+
+        Logs the instance of the React class (this), showing the object with its properties.
+    </p>
+
+    <p>
+        class React {
+        constructor() {
+        this.framework = "react"
+        this.Server = "https://localhost3000"
+        document.querySelector("button").addEventListener('click', this.handleclick.bind(this))
+        }
+
+        handleclick() {
+        console.log("button Clicked");
+        console.log(this);
+        }
+    </p>
+
+    </p>
+</body>
+<script>
+    class React {
+        constructor() {
+            this.framework = "react"
+            this.Server = "https://localhost3000"
+            document.querySelector("button").addEventListener('click', this.handleclick.bind(this))
+        }
+
+        handleclick() {
+            console.log("button Clicked");
+            console.log(this);
+        }
+    }
+    const App = new React()
+</script>
+
+</html>
